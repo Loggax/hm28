@@ -69,34 +69,34 @@ fifthTask(firstNumber, secondNumber, thirdNumber);
 
 let heigth = +prompt('Введи висоту');
 let width = +prompt('Введи ширину');
-let ploshchaKvadrata;
-let ploshchaPryzmokutnuka;
+let squareArea;
+let rectangleArea;
 
 function sixthTask (a, b) {
     // if (a == 0 || b == 0 || a == b) {
-    //     ploshchaKvadrata = a * a;
-    //     console.log('Площа квадрата дорівнює' + ' ' + ploshchaKvadrata);
+    //     squareArea = a * a;
+    //     console.log('Площа квадрата дорівнює' + ' ' + squareArea);
     // } else if (a > b || a < b || a == b) {
-    //     ploshchaPryzmokutnuka = a * b;
-    //     console.log('Площа прямокутника дорівнює' + ' ' + ploshchaPryzmokutnuka);
+    //     rectangleArea = a * b;
+    //     console.log('Площа прямокутника дорівнює' + ' ' + rectangleArea);
     // }
 
     switch(true) {
         case(a == 0) : 
-            ploshchaKvadrata = b * b;
-            console.log('Площа квадрата дорівнює' + ' ' + ploshchaKvadrata);
+            squareArea = b * b;
+            console.log('Площа квадрата дорівнює' + ' ' + squareArea);
         break;
         case(b == 0) :
-            ploshchaKvadrata = a * a;
-            console.log('Площа квадрата дорівнює' + ' ' + ploshchaKvadrata);
+            squareArea = a * a;
+            console.log('Площа квадрата дорівнює' + ' ' + squareArea);
         break;
         case(a == b || b == a) :
-            ploshchaKvadrata = a * a;
-            console.log('Площа квадрата дорівнює' + ' ' + ploshchaKvadrata);
+            squareArea = a * a;
+            console.log('Площа квадрата дорівнює' + ' ' + squareArea);
         break;
-        case(a > b || a < b || a == b) :
-            ploshchaPryzmokutnuka = a * b;
-            console.log('Площа прямокутника дорівнює' + ' ' + ploshchaPryzmokutnuka);
+        case(a > b || a < b) :
+            rectangleArea = a * b;
+            console.log('Площа прямокутника дорівнює' + ' ' + rectangleArea);
         break;
         default: ;
     }
